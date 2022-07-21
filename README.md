@@ -3,7 +3,9 @@
 A list and count of keywords in programming languages. Based on work originally
 compiled by [@leighmcculloch](https://github.com/leighmcculloch) and contributors.
 
-_2020 update:_ I'm slowly working through this list and trying to standardize the meaning of "keyword" to be any word with special meaning in the language, as opposed to "reserved words" which cannot be used as identifiers. You may see some drastic changes depending on the language.
+_2022 update (WIP):_ I took the latest versions of several popularity lists and am ensuring the top 10 in all three lists were on this list. There have been some pretty significant changes in the past couple of years, including the addition of some _soft_ or _contextual_ keywords in Python 3 and Java, increasing their keyword counts significantly.
+
+In addition to the above, I migrated CI to GitHub Actions and am worknig to ensure multiple language versions with different keyword sets are represented.
 
 ![Languages by keyword](chart.png)
 
@@ -17,25 +19,36 @@ Don't see a language here? Please open a pull request adding it!
 
 ## Keyword List
 
-* [C (ANSI) (32 keywords)](#c-ansi-32-keywords)
-* [C (C18) (44 keywords)](#c-c18-44-keywords)
+* [C (ANSI (C89)) (32 keywords)](#c-ansi-c89-32-keywords)
+* [C (C11) (44 keywords)](#c-c11-44-keywords)
+* [C (C17) (44 keywords)](#c-c17-44-keywords)
+* [C (C99) (37 keywords)](#c-c99-37-keywords)
 * [C# (8.0) (107 keywords)](#c-80-107-keywords)
+* [C++ (C++03) (74 keywords)](#c-c-03-74-keywords)
+* [C++ (C++11) (84 keywords)](#c-c-11-84-keywords)
+* [C++ (C++14) (84 keywords)](#c-c-14-84-keywords)
 * [C++ (C++17) (84 keywords)](#c-c-17-84-keywords)
+* [C++ (C++20) (92 keywords)](#c-c-20-92-keywords)
 * [C++ (C++98) (74 keywords)](#c-c-98-74-keywords)
 * [Dart (2.2) (33 keywords)](#dart-22-33-keywords)
 * [Elixir (1.10) (15 keywords)](#elixir-110-15-keywords)
 * [Erlang (23) (27 keywords)](#erlang-23-27-keywords)
 * [Fortran (Fortran 2008) (103 keywords)](#fortran-fortran-2008-103-keywords)
-* [Go (1.15) (25 keywords)](#go-115-25-keywords)
-* [JS (ES2020) (38 keywords)](#js-es2020-38-keywords)
-* [Java (SE 14) (51 keywords)](#java-se-14-51-keywords)
+* [Go (1.18) (25 keywords)](#go-118-25-keywords)
+* [Java (SE 11 LTS) (51 keywords)](#java-se-11-lts-51-keywords)
+* [Java (SE 17 LTS) (67 keywords)](#java-se-17-lts-67-keywords)
+* [JavaScript (1st edition) (35 keywords)](#javascript-1st-edition-35-keywords)
+* [JavaScript (2nd edition) (59 keywords)](#javascript-2nd-edition-59-keywords)
+* [JavaScript (3rd edition) (59 keywords)](#javascript-3rd-edition-59-keywords)
+* [JavaScript (5th edition) (45 keywords)](#javascript-5th-edition-45-keywords)
+* [JavaScript (6th edition) (46 keywords)](#javascript-6th-edition-46-keywords)
 * [Kotlin (1.4) (79 keywords)](#kotlin-14-79-keywords)
 * [Lua (5.3) (22 keywords)](#lua-53-22-keywords)
 * [MATLAB (R2020a) (20 keywords)](#matlab-r2020a-20-keywords)
 * [Objective-C (2.0) (85 keywords)](#objective-c-20-85-keywords)
 * [PHP (7.4) (69 keywords)](#php-74-69-keywords)
-* [Python (2.7) (31 keywords)](#python-27-31-keywords)
-* [Python (3.8) (35 keywords)](#python-38-35-keywords)
+* [Python 2 (2.7) (31 keywords)](#python-2-27-31-keywords)
+* [Python 3 (3.10) (38 keywords)](#python-3-310-38-keywords)
 * [R (4.0) (21 keywords)](#r-40-21-keywords)
 * [Ruby (2.7) (41 keywords)](#ruby-27-41-keywords)
 * [Rust (1.46) (53 keywords)](#rust-146-53-keywords)
@@ -43,7 +56,7 @@ Don't see a language here? Please open a pull request adding it!
 * [Swift (5.3) (97 keywords)](#swift-53-97-keywords)
 * [Visual Basic (2019) (217 keywords)](#visual-basic-2019-217-keywords)
 
-### C (ANSI) (32 keywords)
+### C (ANSI (C89)) (32 keywords)
 | | | | |
 |---|---|---|---|
 |  auto | break | case | char |
@@ -59,7 +72,7 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [http://port70.net/~nsz/c/c89/c89-draft.html#3.1.1](http://port70.net/~nsz/c/c89/c89-draft.html#3.1.1)
-### C (C18) (44 keywords)
+### C (C11) (44 keywords)
 | | | | |
 |---|---|---|---|
 |  auto | break | case | char |
@@ -77,7 +90,44 @@ Don't see a language here? Please open a pull request adding it!
 
 #### Sources:
 
-[http://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](http://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf)
+[https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1570.pdf](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1570.pdf)
+### C (C17) (44 keywords)
+| | | | |
+|---|---|---|---|
+|  auto | break | case | char |
+|  const | continue | default | do |
+|  double | else | enum | extern |
+|  float | for | goto | if |
+|  inline | int | long | register |
+|  restrict | return | short | signed |
+|  sizeof | static | struct | switch |
+|  typedef | union | unsigned | void |
+|  volatile | while | _Alignas | _Alignof |
+|  _Atomic | _Bool | _Complex | _Generic |
+|  _Imaginary | _Noreturn | _Static_assert | _Thread_local |
+
+
+#### Sources:
+
+[https://www.open-std.org/JTC1/SC22/WG14/www/docs/n2310.pdf](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n2310.pdf)
+### C (C99) (37 keywords)
+| | | | |
+|---|---|---|---|
+|  auto | break | case | char |
+|  const | continue | default | do |
+|  double | else | enum | extern |
+|  float | for | goto | if |
+|  inline | int | long | register |
+|  restrict | return | short | signed |
+|  sizeof | static | struct | switch |
+|  typedef | union | unsigned | void |
+|  volatile | while | _Bool | _Complex |
+|  _Imaginary |
+
+
+#### Sources:
+
+[https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf](https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf)
 ### C# (8.0) (107 keywords)
 | | | | |
 |---|---|---|---|
@@ -113,6 +163,91 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [https://standards.iso.org/ittf/PubliclyAvailableStandards/c075178_ISO_IEC_23270_2018.zip](https://standards.iso.org/ittf/PubliclyAvailableStandards/c075178_ISO_IEC_23270_2018.zip)
+### C++ (C++03) (74 keywords)
+| | | | |
+|---|---|---|---|
+|  asm | auto | bool | break |
+|  case | catch | char | class |
+|  const | const_cast | continue | default |
+|  delete | do | double | dynamic_cast |
+|  else | enum | explicit | export |
+|  extern | false | float | for |
+|  friend | goto | if | inline |
+|  int | long | mutable | namespace |
+|  new | operator | private | protected |
+|  public | register | reinterpret_cast | return |
+|  short | signed | sizeof | static |
+|  static_cast | struct | switch | template |
+|  this | throw | true | try |
+|  typedef | typeid | typename | union |
+|  unsigned | using | virtual | void |
+|  volatile | wchar_t | while | and |
+|  and_eq | bitand | bitor | compl |
+|  not | not_eq | or | or_eq |
+|  xor | xor_eq |
+
+
+#### Sources:
+
+[http://staff.ustc.edu.cn/~zhuang/cpp/specs/ISO_IEC%2014882%202003.pdf](http://staff.ustc.edu.cn/~zhuang/cpp/specs/ISO_IEC%2014882%202003.pdf)
+### C++ (C++11) (84 keywords)
+| | | | |
+|---|---|---|---|
+|  alignas | alignof | asm | auto |
+|  bool | break | case | catch |
+|  char | char_16t | char_32t | class |
+|  const | constexpr | const_cast | continue |
+|  decltype | default | delete | do |
+|  double | dynamic_cast | else | enum |
+|  explicit | export | extern | false |
+|  float | for | friend | goto |
+|  if | inline | int | long |
+|  mutable | namespace | new | noexcept |
+|  nullptr | operator | private | protected |
+|  public | register | reinterpret_cast | return |
+|  short | signed | sizeof | static |
+|  static_assert | static_cast | struct | switch |
+|  template | this | thread_local | throw |
+|  true | try | typedef | typeid |
+|  typename | union | unsigned | using |
+|  virtual | void | volatile | wchar_t |
+|  while | and | and_eq | bitand |
+|  bitor | compl | not | not_eq |
+|  or | or_eq | xor | xor_eq |
+
+
+#### Sources:
+
+[https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3242.pdf](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3242.pdf)
+### C++ (C++14) (84 keywords)
+| | | | |
+|---|---|---|---|
+|  alignas | alignof | asm | auto |
+|  bool | break | case | catch |
+|  char | char_16t | char_32t | class |
+|  const | constexpr | const_cast | continue |
+|  decltype | default | delete | do |
+|  double | dynamic_cast | else | enum |
+|  explicit | export | extern | false |
+|  float | for | friend | goto |
+|  if | inline | int | long |
+|  mutable | namespace | new | noexcept |
+|  nullptr | operator | private | protected |
+|  public | register | reinterpret_cast | return |
+|  short | signed | sizeof | static |
+|  static_assert | static_cast | struct | switch |
+|  template | this | thread_local | throw |
+|  true | try | typedef | typeid |
+|  typename | union | unsigned | using |
+|  virtual | void | volatile | wchar_t |
+|  while | and | and_eq | bitand |
+|  bitor | compl | not | not_eq |
+|  or | or_eq | xor | xor_eq |
+
+
+#### Sources:
+
+[https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3242.pdf](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2011/n3242.pdf)
 ### C++ (C++17) (84 keywords)
 | | | | |
 |---|---|---|---|
@@ -142,6 +277,37 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4659.pdf](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4659.pdf)
+### C++ (C++20) (92 keywords)
+| | | | |
+|---|---|---|---|
+|  alignas | alignof | asm | auto |
+|  bool | break | case | catch |
+|  char | char8_t | char16_t | char32_t |
+|  class | concept | const | consteval |
+|  constexpr | constinit | const_cast | continue |
+|  co_await | co_return | co_yield | decltype |
+|  default | delete | do | double |
+|  dynamic_cast | else | enum | explicit |
+|  export | extern | false | float |
+|  for | friend | goto | if |
+|  inline | int | long | mutable |
+|  namespace | new | noexcept | nullptr |
+|  operator | private | protected | public |
+|  register | reinterpret_cast | requires | return |
+|  short | signed | sizeof | static |
+|  static_assert | static_cast | struct | switch |
+|  template | this | thread_local | throw |
+|  true | try | typedef | typeid |
+|  typename | union | unsigned | using |
+|  virtual | void | volatile | wchar_t |
+|  while | and | and_eq | bitand |
+|  bitor | compl | not | not_eq |
+|  or | or_eq | xor | xor_eq |
+
+
+#### Sources:
+
+[https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/n4849.pdf](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/n4849.pdf)
 ### C++ (C++98) (74 keywords)
 | | | | |
 |---|---|---|---|
@@ -168,7 +334,7 @@ Don't see a language here? Please open a pull request adding it!
 
 #### Sources:
 
-[http://www.lirmm.fr/~ducour/Doc-objets/ISO+IEC+14882-1998.pdf](http://www.lirmm.fr/~ducour/Doc-objets/ISO+IEC+14882-1998.pdf)
+[https://www.lirmm.fr/~ducour/Doc-objets/ISO+IEC+14882-1998.pdf](https://www.lirmm.fr/~ducour/Doc-objets/ISO+IEC+14882-1998.pdf)
 ### Dart (2.2) (33 keywords)
 | | | | |
 |---|---|---|---|
@@ -247,7 +413,7 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [http://fortranwiki.org/fortran/show/Keywords](http://fortranwiki.org/fortran/show/Keywords)
-### Go (1.15) (25 keywords)
+### Go (1.18) (25 keywords)
 | | | | |
 |---|---|---|---|
 |  break | case | chan | const |
@@ -262,25 +428,7 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [https://golang.org/ref/spec#Keywords](https://golang.org/ref/spec#Keywords)
-### JS (ES2020) (38 keywords)
-| | | | |
-|---|---|---|---|
-|  await | break | case | catch |
-|  class | const | continue | debugger |
-|  default | delete | do | else |
-|  enum | export | extends | false |
-|  finally | for | function | if |
-|  import | in | instanceof | new |
-|  null | return | super | switch |
-|  this | throw | true | try |
-|  typeof | var | void | while |
-|  with | yield |
-
-
-#### Sources:
-
-[https://www.ecma-international.org/ecma-262/index.html#sec-keywords](https://www.ecma-international.org/ecma-262/index.html#sec-keywords)
-### Java (SE 14) (51 keywords)
+### Java (SE 11 LTS) (51 keywords)
 | | | | |
 |---|---|---|---|
 |  abstract | assert | boolean | break |
@@ -301,6 +449,134 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [https://docs.oracle.com/javase/specs/jls/se11/html/jls-3.html#jls-3.9](https://docs.oracle.com/javase/specs/jls/se11/html/jls-3.html#jls-3.9)
+### Java (SE 17 LTS) (67 keywords)
+| | | | |
+|---|---|---|---|
+|  abstract | assert | boolean | break |
+|  byte | case | catch | char |
+|  class | const | continue | default |
+|  do | double | else | enum |
+|  extends | final | finally | float |
+|  for | if | goto | implements |
+|  import | instanceof | int | interface |
+|  long | native | new | package |
+|  private | protected | public | return |
+|  short | static | strictfp | super |
+|  switch | synchronized | this | throw |
+|  throws | transient | try | void |
+|  volatile | while | _ | exports |
+|  module | non-sealed | open | opens |
+|  permits | provides | record | requires |
+|  sealed | to | transitive | uses |
+|  var | with | yield |
+
+
+#### Sources:
+
+[https://docs.oracle.com/javase/specs/jls/se17/html/jls-3.html#jls-3.9](https://docs.oracle.com/javase/specs/jls/se17/html/jls-3.html#jls-3.9)
+### JavaScript (1st edition) (35 keywords)
+| | | | |
+|---|---|---|---|
+|  break | continue | delete | else |
+|  for | function | if | in |
+|  new | return | this | typeof |
+|  var | void | while | with |
+|  case | catch | class | const |
+|  debugger | default | do | enum |
+|  export | extends | finally | import |
+|  super | switch | throw | try |
+|  null | true | false |
+
+
+#### Sources:
+
+[https://www.ecma-international.org/wp-content/uploads/ECMA-262_1st_edition_june_1997.pdf](https://www.ecma-international.org/wp-content/uploads/ECMA-262_1st_edition_june_1997.pdf)
+### JavaScript (2nd edition) (59 keywords)
+| | | | |
+|---|---|---|---|
+|  break | continue | delete | else |
+|  for | function | if | in |
+|  new | return | this | typeof |
+|  var | void | while | with |
+|  abstract | boolean | byte | case |
+|  catch | char | class | const |
+|  debugger | default | do | double |
+|  enum | export | extends | final |
+|  finally | float | goto | implements |
+|  import | instanceof | int | interface |
+|  long | native | package | private |
+|  protected | public | short | static |
+|  super | switch | synchronized | throw |
+|  throws | transient | try | volatile |
+|  null | true | false |
+
+
+#### Sources:
+
+[https://www.ecma-international.org/wp-content/uploads/ECMA-262_2nd_edition_august_1998.pdf](https://www.ecma-international.org/wp-content/uploads/ECMA-262_2nd_edition_august_1998.pdf)
+### JavaScript (3rd edition) (59 keywords)
+| | | | |
+|---|---|---|---|
+|  break | case | catch | continue |
+|  default | delete | do | else |
+|  finally | for | function | if |
+|  in | instanceof | new | return |
+|  switch | this | throw | try |
+|  typeof | var | void | while |
+|  with | abstract | boolean | byte |
+|  char | class | const | debugger |
+|  double | enum | export | extends |
+|  final | float | goto | implements |
+|  import | int | interface | long |
+|  native | package | private | protected |
+|  public | short | static | super |
+|  synchronized | throws | transient | volatile |
+|  null | true | false |
+
+
+#### Sources:
+
+[https://www.ecma-international.org/wp-content/uploads/ECMA-262_3rd_edition_december_1999.pdf](https://www.ecma-international.org/wp-content/uploads/ECMA-262_3rd_edition_december_1999.pdf)
+### JavaScript (5th edition) (45 keywords)
+| | | | |
+|---|---|---|---|
+|  break | case | catch | continue |
+|  debugger | default | delete | do |
+|  else | finally | for | function |
+|  if | in | instanceof | new |
+|  return | switch | this | throw |
+|  try | typeof | var | void |
+|  while | with | class | const |
+|  enum | export | extends | import |
+|  super | implements | interface | let |
+|  package | private | protected | public |
+|  static | yield | null | true |
+|  false |
+
+
+#### Sources:
+
+[https://www.ecma-international.org/wp-content/uploads/ECMA-262_5th_edition_december_2009.pdf](https://www.ecma-international.org/wp-content/uploads/ECMA-262_5th_edition_december_2009.pdf)
+### JavaScript (6th edition) (46 keywords)
+| | | | |
+|---|---|---|---|
+|  break | case | catch | class |
+|  const | continue | debugger | default |
+|  delete | do | else | export |
+|  extends | finally | for | function |
+|  if | import | in | instanceof |
+|  new | return | super | switch |
+|  this | throw | try | typeof |
+|  var | void | while | with |
+|  yield | let | static | enum |
+|  await | implements | interface | package |
+|  private | protected | public | null |
+|  true | false |
+
+
+#### Sources:
+
+[https://www.ecma-international.org/wp-content/uploads/ECMA-262_5th_edition_december_2009.pdf](https://www.ecma-international.org/wp-content/uploads/ECMA-262_5th_edition_december_2009.pdf)
 ### Kotlin (1.4) (79 keywords)
 | | | | |
 |---|---|---|---|
@@ -412,7 +688,7 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [http://php.net/manual/en/reserved.keywords.php](http://php.net/manual/en/reserved.keywords.php)
-### Python (2.7) (31 keywords)
+### Python 2 (2.7) (31 keywords)
 | | | | |
 |---|---|---|---|
 |  and | as | assert | break |
@@ -427,8 +703,8 @@ Don't see a language here? Please open a pull request adding it!
 
 #### Sources:
 
-[https://docs.python.org/2/reference/lexical_analysis.html#keywords](https://docs.python.org/2/reference/lexical_analysis.html#keywords)
-### Python (3.8) (35 keywords)
+[https://docs.python.org/2.7/reference/lexical_analysis.html#keywords](https://docs.python.org/2.7/reference/lexical_analysis.html#keywords)
+### Python 3 (3.10) (38 keywords)
 | | | | |
 |---|---|---|---|
 |  False | None | True | and |
@@ -439,12 +715,14 @@ Don't see a language here? Please open a pull request adding it!
 |  if | import | in | is |
 |  lambda | nonlocal | not | or |
 |  pass | raise | return | try |
-|  while | with | yield |
+|  while | with | yield | match |
+|  case | _ |
 
 
 #### Sources:
 
-[https://docs.python.org/3.8/reference/lexical_analysis.html#keywords](https://docs.python.org/3.8/reference/lexical_analysis.html#keywords)
+[https://docs.python.org/3.10/reference/lexical_analysis.html#keywords](https://docs.python.org/3.10/reference/lexical_analysis.html#keywords)
+[https://docs.python.org/3.10/reference/lexical_analysis.html#keywords](https://docs.python.org/3.10/reference/lexical_analysis.html#keywords)
 ### R (4.0) (21 keywords)
 | | | | |
 |---|---|---|---|
