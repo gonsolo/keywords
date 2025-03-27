@@ -98,6 +98,9 @@ func main() {
 		log.Fatal(err)
 	}
 	err = yaml.Unmarshal(dataBytes, &data)
+	if len(data) == 0 {
+		log.Fatal("len is 0")
+	}
 	sort.Sort(data)
 
 	//render and save the chart

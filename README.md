@@ -61,7 +61,7 @@ Don't see a language here? Please open a pull request adding it!
 * [Ruby (2.7) (41 keywords)](#ruby-27-41-keywords)
 * [Rust (1.46) (53 keywords)](#rust-146-53-keywords)
 * [Scala (2.13) (40 keywords)](#scala-213-40-keywords)
-* [Swift (5.3) (97 keywords)](#swift-53-97-keywords)
+* [Swift (6.0.3) (221 keywords)](#swift-603-221-keywords)
 * [Visual Basic (2019) (217 keywords)](#visual-basic-2019-217-keywords)
 
 ### C (ANSI (C89)) (32 keywords)
@@ -804,39 +804,70 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [https://scala-lang.org/files/archive/spec/2.13/01-lexical-syntax.html](https://scala-lang.org/files/archive/spec/2.13/01-lexical-syntax.html)
-### Swift (5.3) (97 keywords)
+### Swift (6.0.3) (221 keywords)
 | | | | |
 |---|---|---|---|
-|  associatedtype | class | deinit | enum |
-|  extension | fileprivate | func | import |
-|  init | inout | internal | let |
-|  open | operator | private | protocol |
-|  public | rethrows | static | struct |
-|  subscript | typealias | var | break |
-|  case | continue | default | defer |
-|  do | else | fallthrough | for |
-|  guard | if | in | repeat |
-|  return | switch | where | while |
-|  as | Any | catch | false |
-|  is | nil | super | self |
-|  Self | throw | throws | true |
-|  try | _ | #available | #colorLiteral |
-|  #column | #else | #elseif | #endif |
-|  #error | #file | #filePath | #fileLiteral |
-|  #function | #if | #imageLiteral | #line |
-|  #selector | #sourceLocation | #warning | associativity |
-|  convenience | dynamic | didSet | final |
-|  get | infix | indirect | lazy |
-|  left | mutating | none | nonmutating |
-|  optional | override | postfix | precedence |
-|  prefix | Protocol | required | right |
-|  set | Type | unowned | weak |
-|  willSet |
+|  __consuming | __owned | __setter_access | __shared |
+|  _alignment | _backDeploy | _borrow | _borrowing |
+|  _BridgeObject | _cdecl | _Class | _compilerInitialized |
+|  _const | _consuming | _documentation | _dynamicReplacement |
+|  _effects | _expose | _forward | _implements |
+|  _linear | _local | _modify | _move |
+|  _mutating | _NativeClass | _NativeRefCountedObject | _noMetadata |
+|  _nonSendable | _objcImplementation | _objcRuntimeName | _opaqueReturnTypeOf |
+|  _optimize | _originallyDefinedIn | _PackageDescription | _private |
+|  _projectedValueProperty | _read | _RefCountedObject | _semantics |
+|  _specialize | _spi | _spi_available | _swift_native_objc_runtime_base |
+|  _Trivial | _TrivialAtMost | _TrivialStride | _typeEraser |
+|  _unavailableFromAsync | _underlyingVersion | _UnknownLayout | _version |
+|  abi | accesses | actor | addressWithNativeOwner |
+|  addressWithOwner | any | Any | as |
+|  assignment | associatedtype | associativity | async |
+|  attached | autoclosure | availability | available |
+|  await | backDeployed | before | block |
+|  borrow | borrowing | break | canImport |
+|  case | catch | class | compiler |
+|  consume | copy | consuming | continue |
+|  convenience | convention | cType | default |
+|  defer | deinit | dependsOn | deprecated |
+|  derivative | didSet | differentiable | distributed |
+|  do | dynamic | each | else |
+|  enum | escaping | exclusivity | exported |
+|  extension | fallthrough | false | file |
+|  fileprivate | final | for | discard |
+|  forward | func | freestanding | get |
+|  guard | higherThan | if | import |
+|  in | indirect | infix | init |
+|  initializes | inline | inout | internal |
+|  introduced | is | isolated | kind |
+|  lazy | left | let | line |
+|  linear | lowerThan | macro | message |
+|  metadata | modify | module | mutableAddressWithNativeOwner |
+|  mutableAddressWithOwner | mutating | nil | noasync |
+|  noDerivative | noescape | none | nonisolated |
+|  nonmutating | objc | obsoleted | of |
+|  open | operator | optional | override |
+|  package | postfix | precedencegroup | preconcurrency |
+|  prefix | private | Protocol | protocol |
+|  public | read | reasync | renamed |
+|  repeat | required | rethrows | retroactive |
+|  return | reverse | right | safe |
+|  scoped | self | sending | Self |
+|  Sendable | set | some | sourceFile |
+|  spi | spiModule | static | struct |
+|  subscript | super | swift | switch |
+|  target | then | throw | throws |
+|  transpose | true | try | Type |
+|  typealias | unavailable | unchecked | unowned |
+|  unsafe | unsafeAddress | unsafeMutableAddress | var |
+|  visibility | weak | where | while |
+|  willSet | witness_method | wrt | x |
+|  yield |
 
 
 #### Sources:
 
-[https://docs.swift.org/swift-book/ReferenceManual/LexicalStructure.html](https://docs.swift.org/swift-book/ReferenceManual/LexicalStructure.html)
+[https://github.com/swiftlang/swift-syntax/blob/4ed73b13d0b235c96dad9efc676820efc83fe435/CodeGeneration/Sources/SyntaxSupport/KeywordSpec.swift#L77](https://github.com/swiftlang/swift-syntax/blob/4ed73b13d0b235c96dad9efc676820efc83fe435/CodeGeneration/Sources/SyntaxSupport/KeywordSpec.swift#L77)
 ### Visual Basic (2019) (217 keywords)
 | | | | |
 |---|---|---|---|
